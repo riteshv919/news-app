@@ -1,17 +1,32 @@
 import React from "react";
+import { Card, CardMedia, CardContent, CardActions, Button, Typography } from "@mui/material";
 
 const Newitem = ({ title, description, src, url }) => {
   return (
-    <div className="card news-card">
-      <img src={src} className="card-img-top" alt="news" />
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{description}</p>
-        <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+    <Card sx={{ width: "50%", margin: "10px auto", height: "100%" }}>
+      <CardMedia
+        component="img"
+        height="100%"  // Increase the height of the image
+        image={src}
+        alt="news"
+        sx={{
+          objectFit: "cover",  // Adjust the image to cover the entire area
+        }}
+      />
+      <CardContent>
+        <Typography variant="h5" component="div">
+          {title}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {description}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small" href={url} target="_blank" rel="noopener noreferrer">
           Read More
-        </a>
-      </div>
-    </div>
+        </Button>
+      </CardActions>
+    </Card>
   );
 };
 

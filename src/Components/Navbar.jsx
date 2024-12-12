@@ -1,6 +1,6 @@
-import React, { useContext, useState } from 'react';
-import { ThemeContext } from '../context/ThemeContext';
-import { NewsContext } from '../context/NewsContext';
+import React, { useContext, useState } from "react";
+import { ThemeContext } from "../context/ThemeContext";
+import { NewsContext } from "../context/NewsContext";
 
 const Navbar = () => {
   const { toggleTheme, isDarkMode } = useContext(ThemeContext);
@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar navbar-expand-lg ${isDarkMode ? 'bg-dark' : 'bg-light'}`} data-bs-theme={isDarkMode ? 'dark' : 'light'}>
+    <nav className={`navbar navbar-expand-lg navbar-dark bg-dark`}>
       <div className="container-fluid">
         <a className="navbar-brand" href="#">NewsMag</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,9 +36,9 @@ const Navbar = () => {
           </ul>
           <form className="d-flex" role="search" onSubmit={handleSearch}>
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={query} onChange={(e) => setQuery(e.target.value)} />
-            <button className="btn btn-outline-success" type="submit">Search</button>
+            <button className="btn btn-outline-light" type="submit">Search</button>
           </form>
-          <button onClick={toggleTheme} className="btn btn-outline-secondary ms-2">{isDarkMode ? 'Light Mode' : 'Dark Mode'}</button>
+          <button onClick={toggleTheme} className="btn btn-outline-light ms-2">Toggle Theme</button>
         </div>
       </div>
     </nav>

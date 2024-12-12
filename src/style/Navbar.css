@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    padding: 1rem 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #343a40;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.75rem 1.25rem;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: #f1f1f1;
+    color: #007bff;
+  }
+  
+  .navbar .form-control {
+    width: 250px;
+    padding: 0.5rem;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+  }
+  
+  .navbar .form-control:focus {
+    border-color: #007bff;
+  }
+  
+  .navbar .btn {
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar .btn-outline-success {
+    color: #28a745;
+    border: 2px solid #28a745;
+  }
+  
+  .navbar .btn-outline-success:hover {
+    background-color: #28a745;
+    color: white;
+    border-color: #218838;
+  }
+  
+  .navbar .btn-outline-secondary {
+    color: #6c757d;
+    border: 2px solid #6c757d;
+  }
+  
+  .navbar .btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: white;
+    border-color: #5a6268;
+  }
+  
+  /* Dark mode styles */
+  .navbar-dark {
+    background-color: #212529;
+  }
+  
+  .navbar-dark .navbar-brand {
+    color: #f8f9fa;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #f8f9fa;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    background-color: #495057;
+    color: #ffffff;
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .navbar .navbar-collapse {
+      text-align: center;
+    }
+  
+    .navbar .nav-item {
+      margin-bottom: 1rem;
+    }
+  
+    .navbar .form-control {
+      width: 200px;
+      margin: 10px 0;
+    }
+  }
+  
