@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.light {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.navbar.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-toggle-theme {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* NewsBoard and Newitem Styles */
+.news-board {
+  padding: 2rem;
+  transition: color 0.3s ease;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem auto;
+  max-width: 350px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light .card {
+  --card-bg: #fff;
+  --card-border: #ddd;
+}
+
+body.dark .card {
+  --card-bg: #333;
+  --card-border: #444;
+}
