@@ -8,7 +8,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import { NewsProvider } from './context/NewsContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './Components/Footer';
-import PrivacyPolicy from './components/PrivacyPolicy'; // Import PrivacyPolicy component
+import PrivacyPolicy from './components/PrivacyPolicy.jsx'; // Import PrivacyPolicy component
 
 import './App.css';
 
