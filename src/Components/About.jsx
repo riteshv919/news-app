@@ -1,27 +1,37 @@
+// src/Components/About.jsx
 import React from 'react';
-import './About.css'; // Add any custom CSS if needed
 
 const About = () => {
   return (
-    <div className="about-container">
-      <h2>About Me</h2>
-      <p>Welcome to my News App! My name is Ritesh Vyawahare, and I'm a passionate web developer currently studying at Shri Guru Gobind Singhji Institute of Engineering and Technology. I created this app to display news articles from various sources in a user-friendly and intuitive manner.</p>
-
-      <h3>My Skills:</h3>
+    <div style={{ padding: '20px' }}>
+      <h2>About the News App</h2>
+      <p>
+        Welcome to the <strong>News App</strong>! This application allows users to stay updated with the latest news articles from various categories. You can view breaking news, search for specific topics, and even save your favorite articles for later. The app fetches data from multiple APIs, ensuring the latest news is always available at your fingertips.
+      </p>
+      <p>
+        The main features of the News App include:
+      </p>
       <ul>
-        <li>JavaScript (React.js, Node.js)</li>
-        <li>Python</li>
-        <li>HTML, CSS</li>
-        <li>MongoDB, SQL</li>
-        <li>Web Development</li>
-        <li>Responsive Design</li>
+        <li>Real-time news updates from various categories (e.g., sports, technology, business, etc.).</li>
+        <li>Search functionality to find articles on specific topics.</li>
+        <li>Save your favorite articles for easy access later.</li>
+        <li>Dark and light themes to enhance the user experience.</li>
       </ul>
 
-      <h3>About the Project:</h3>
-      <p>This News App allows users to view the latest articles on various topics, save articles for later, and explore news from different categories like Business, Technology, and Sports. It's built using the MERN stack (MongoDB, Express, React, Node.js) to provide a seamless and dynamic user experience.</p>
-
-      <h3>Contact:</h3>
-      <p>If you would like to get in touch, feel free to <a href="/contact">contact me</a>.</p>
+      <h3>About Me</h3>
+      <p>
+        I am <strong>Ritesh Vyawahare</strong>, a second-year student at <strong>Shri Guru Gobind Singhji Institute of Engineering and Technology</strong>. As a software development enthusiast, I created this News App as part of my journey to learn full-stack web development. The app is built using technologies such as React, Node.js, MongoDB, and Material UI.
+      </p>
+      <p>
+        Through this app, I am able to demonstrate my skills in integrating third-party APIs, building dynamic user interfaces, and implementing features such as news categorization, search, and saving articles.
+      </p>
+      <h3>Contact Information</h3>
+      <p>
+        <strong>Email:</strong> <a href="mailto:riteshv919@gmail.com">riteshv919@gmail.com</a>
+      </p>
+      <p>
+        <strong>Phone:</strong> <a href="tel:+919325396508">+91 9325396508</a>
+      </p>
     </div>
   );
 };
