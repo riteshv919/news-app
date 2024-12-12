@@ -1,0 +1,35 @@
+/* About.css */
+.about-container {
+    padding: 20px;
+    width: 100%;
+    /* max-width: 800px; */
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-container h2 {
+    text-align: center;
+    color: #343a40;
+  }
+  
+  .about-container h3 {
+    margin-top: 20px;
+    color: #495057;
+  }
+  
+  .about-container ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  .about-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .about-container a:hover {
+    text-decoration: underline;
+  }
+  

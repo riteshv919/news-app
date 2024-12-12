@@ -35,10 +35,9 @@ const Navbar = () => {
             </li>
           </ul>
           <form className="d-flex" role="search" onSubmit={handleSearch}>
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={query} onChange={(e) => setQuery(e.target.value)} />
+            <input className="form-control me-5" type="search" placeholder="Search" aria-label="Search" value={query} onChange={(e) => setQuery(e.target.value)} />
             <button className="btn btn-outline-light" type="submit">Search</button>
           </form>
-          <button onClick={toggleTheme} className="btn btn-outline-light ms-2">Toggle Theme</button>
         </div>
       </div>
     </nav>

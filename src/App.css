@@ -66,3 +66,28 @@ body.dark .card {
   --card-bg: #333;
   --card-border: #444;
 }
+
+/* App.css or global CSS */
+html, body {
+    height: 100%; /* Make sure the body takes up the full height of the screen */
+    margin: 0; /* Remove default margin */
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Make sure the app container fills the screen */
+  }
+  
+  main {
+    flex-grow: 1; /* Allow the main content to take available space */
+  }
+  
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+  

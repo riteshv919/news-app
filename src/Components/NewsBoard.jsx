@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { NewsContext } from '../context/NewsContext';
 import Newitem from './Newitem';
 import { fetchNewsByCategory, searchNews } from '../utils/api';
+import { Box, Typography } from '@mui/material'; // Import Box and Typography for spacing
 
 const NewsBoard = () => {
   const { category, searchQuery } = useContext(NewsContext);
@@ -27,12 +28,15 @@ const NewsBoard = () => {
   if (loading) return <h3>Loading...</h3>;
 
   return (
-    <div>
-      <h2 className='text-center'>Latest <span className="badge text-bg-danger">News</span></h2>
+    <Box sx={{ margin: 5 }}> {/* Added margin around the entire content */}
+      <Typography variant="h4" align="center" sx={{ marginBottom: 4 }}>
+        Latest <span className="badge text-bg-danger">News</span>
+      </Typography>
+
       {articles.map((news, idx) => (
         <Newitem key={idx} title={news.title} description={news.description} src={news.urlToImage} url={news.url} />
       ))}
-    </div>
+    </Box>
   );
 };
 
